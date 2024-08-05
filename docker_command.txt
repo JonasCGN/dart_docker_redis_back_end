@@ -1,11 +1,14 @@
 # Iniciar a imagem do docker api
 
+Linux
 sudo docker build -t my_api:latest .
 
+Windows
+docker build -t my_api:latest .
 
-# Iniciar um swap localmente
+# Iniciar um swarm localmente
 
-docker swap init
+docker swarm init
 docker stack deploy --compose-file docker-stack.yml SO
 
 # verificar serviço
