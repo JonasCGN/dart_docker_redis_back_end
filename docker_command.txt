@@ -8,8 +8,8 @@ docker login
 
 # adicionar a imagem no docker hub
 
-docker tag <name_image>:latest <your_registry>/<name_image>:latest
-docker push <your_registry>/<name_image>:latest
+docker tag <name_image>:latest <username_docker>/<name_image>:latest
+docker push <username_docker>/<name_image>:latest
 
 # Iniciar um swarm localmente
 
@@ -62,7 +62,7 @@ docker swarm join-token manager // Usar caso esteja vazio
 
 # caso venha atualizar a imagem no swarm
 
-docker service update --image <your_registry>/<name_image>:latest <serviceName>
+docker service update --image <username_docker>/<name_image>:latest <serviceName>
 
 # reload docker
 
